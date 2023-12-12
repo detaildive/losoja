@@ -2,26 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--recoleta);
+}
+p {
+  font-family: var(--helvetica);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  width: 8px;
+  background-color: black;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 100%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.perfect-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.ribbon {
+  animation: animate 15s linear infinite;
+}
+.logo-ribbon-inverse {
+  animation: animate2 15s linear infinite;
+}
+
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(1%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(1%);
+  }
 }

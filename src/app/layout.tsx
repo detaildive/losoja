@@ -1,8 +1,28 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const recoleta = localFont({
+  variable: '--recoleta',
+  src: [
+    {
+      path: '../../public/font/RecoletaAltRegular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+})
+
+const helvetica = localFont({
+  variable: '--helvetica',
+  src: [
+    {
+      path: '../../public/font/HelveticaNeueLight.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +36,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${helvetica.variable} ${recoleta.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
