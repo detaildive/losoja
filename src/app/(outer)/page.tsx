@@ -132,7 +132,7 @@ export default function Home() {
         "You simply need to tell us what you need, and we'll do the shopping for you. From groceries to personal items, we've got you covered.",
     },
     {
-      title: '?What if I need to pick up my items?',
+      title: 'What if I need to pick up my items?',
       answer:
         "You simply need to tell us what you need, and we'll do the shopping for you. From groceries to personal items, we've got you covered.",
     },
@@ -149,8 +149,8 @@ export default function Home() {
   ]
   return (
     <div>
+      <Navbar />
       <section className="bg-gray-50 py-[35px] relative">
-        <Navbar />
         <h1 className=" text-head-300 leading-[90px] mb-10 sm:mb-auto sm:leading-normal sm:text-head-500 text-center mt-[150px]">
           Effortless Shopping
         </h1>
@@ -171,7 +171,7 @@ export default function Home() {
           works
         </p>
       </section>
-      <section className="bg-secondary py-14">
+      <section className="bg-secondary py-14" id="about">
         <div className="container">
           <div className=" flex flex-col justify-start items gap-4 md:gap-0 md:flex-row md:items-end md:justify-between">
             <div className="">
@@ -224,7 +224,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section id="services">
         <div className="container">
           <div className="grid grid-cols-6 lg:grid-cols-12">
             <div className="col-span-6 lg:col-span-4 h-[422px] pt-[64px] border-b lg:border-r">
@@ -290,7 +290,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-secondary pt-[108px]">
+      <section className="bg-secondary pt-[108px]" id="company">
         <div className="container">
           <div className="lg:w-[781px] mx-auto pb-[108px]">
             <h4 className="text-gray-450 text-head-100">Trusted by</h4>
@@ -309,9 +309,9 @@ export default function Home() {
           <InfiniteLogoInverse imgArray={INFINITE_LOGO} />
         </div>
       </section>
-      <section className="bg-gray-50 pb-[200px]">
+      <section className="bg-gray-50 pb-[200px]" id="faq">
         <div className="container flex flex-col lg:flex-row items-start justify-between pt-[108px]">
-          <div className="pb-[108px] sm:w-[452px]">
+          <div className="pb-[108px] sm:w-[452px] sticky top-12">
             <h4 className="text-gray-450 text-head-100 mb-2">Frequently</h4>
             <div className="leading-[50px] sm:leading-[100px] text-head-200 sm:text-head-400">
               <h2 className="text-gray-550">Asked</h2>
