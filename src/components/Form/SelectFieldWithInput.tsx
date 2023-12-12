@@ -11,8 +11,8 @@ import {
 import React from 'react'
 import clsx from 'clsx'
 
-import { Option } from '@/types'
 import { Icon } from '..'
+import { Option } from '@/types'
 
 type HasErrorType = Merge<
   FieldError,
