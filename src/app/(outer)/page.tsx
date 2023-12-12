@@ -311,7 +311,7 @@ export default function Home() {
       </section>
       <section className="bg-gray-50 pb-[200px]" id="faq">
         <div className="container flex flex-col lg:flex-row items-start justify-between pt-[108px]">
-          <div className="pb-[108px] sm:w-[452px] sticky top-12">
+          <div className="pb-[108px] sm:w-[452px] lg:sticky lg:top-24">
             <h4 className="text-gray-450 text-head-100 mb-2">Frequently</h4>
             <div className="leading-[50px] sm:leading-[100px] text-head-200 sm:text-head-400">
               <h2 className="text-gray-550">Asked</h2>
