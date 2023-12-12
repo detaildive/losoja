@@ -64,21 +64,21 @@ export const Navbar = () => {
           />
         </div>
       </div>
-      <div className="fixed top-5 right-5 lg:hidden">
+      <div className="fixed top-5 right-5 lg:hidden p-[1px] rounded-md shadow-md bg-primary">
         <Hamburger
           toggled={openSideNav}
           toggle={setOpenSideNav}
           easing="ease-in"
           rounded
           size={20}
-          color="#1b2c19"
+          color="#FAFAFA"
           duration={0.3}
         />
       </div>
       <div
         className={clsx(
-          'lg:hidden fixed z-[1000] transition-all duration-300 shadow-2xl overflow-hidden origin-right top-0 left-0 w-[300px] h-screen bg-gray-50',
-          openSideNav ? 'w-[300px]' : 'w-[0px]'
+          'lg:hidden fixed z-[1000] transition-all ease-in-out duration-300 shadow-2xl overflow-hidden origin-right top-0 left-0 w-[300px] h-screen bg-gray-50',
+          openSideNav ? 'w-[300px] opacity-100' : 'w-[0px] opacity-0'
         )}
       >
         <div className='pl-10 mt-8'>
