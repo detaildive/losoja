@@ -14,11 +14,11 @@ import {
 export default function Home() {
   const PICTURE_ARRAY = [
     {
-      img: '/assets/home/thumbnail1.svg',
+      img: '/assets/home/thumbnail1.png',
       id: '1',
     },
     {
-      img: '/assets/home/thumbnail2.svg',
+      img: '/assets/home/thumbnail2.png',
       id: '2',
     },
   ]
@@ -27,25 +27,25 @@ export default function Home() {
     {
       title: 'Shopping Made Easy',
       text: "Just tell us what you need, and we'll do the shopping for you. Whether it's groceries, personal items, or a gift for a special occasion, we've got you covered.",
-      img: '/assets/home/whatWeDo1.svg',
+      img: '/assets/home/whatWeDo1.png',
       id: '1',
     },
     {
       title: 'Secure Payment and Receipts',
       text: "Pay for your items securely through our app. We'll provide you with a receipt for every transaction.",
-      img: '/assets/home/whatWeDo2.svg',
+      img: '/assets/home/whatWeDo2.png',
       id: '2',
     },
     {
       title: 'Trusted Errand-Runners',
       text: 'We connect you with trustworthy and reliable errand-runners. They are vetted and trained to ensure a quality service.',
-      img: '/assets/home/whatWeDo3.svg',
+      img: '/assets/home/whatWeDo3.png',
       id: '3',
     },
     {
       title: 'Delivery to Your Doorstep',
       text: 'Sit back and relax as your items are delivered to your doorstep at your preferred time.',
-      img: '/assets/home/whatWeDo4.svg',
+      img: '/assets/home/whatWeDo4.png',
       id: '4',
     },
   ]
@@ -197,12 +197,12 @@ export default function Home() {
                   className={clsx(
                     ' rounded-[30px] ',
                     index === 0
-                      ? 'bg-purple_color col-span-6 md:col-span-3 lg:col-span-2 lg:row-span-2 items-center px-[20px] md:px-[10px] lg:px-[41px] lg:pt-[100px]  lg:pb-[40px] py-[48px] pr-[10px] lg:pr-[38.7px] flex lg:flex-col flex-col sm:flex-row justify-between'
+                      ? 'bg-purple_color col-span-6 md:col-span-3 xl:col-span-2 xl:row-span-2 items-center px-[20px] md:px-[10px] xl:px-[41px] xl:pt-[100px]  xl:pb-[40px] py-[48px] pr-[10px] xl:pr-[38.7px] flex xl:flex-col flex-col sm:flex-row justify-between'
                       : index === 1
-                      ? 'bg-blue_color col-span-6 md:col-span-3 px-[20px] md:px-[10px] lg:pl-[48.3px] 2xl:min-w-[550px] items-center flex-col sm:flex-row flex justify-between py-[48px] lg:pr-[38.7px]'
+                      ? 'bg-blue_color col-span-6 md:col-span-3 px-[20px] md:px-[10px] xl:pl-[48.3px] 2xl:min-w-[550px] items-center flex-col sm:flex-row flex justify-between py-[48px] xl:pr-[38.7px]'
                       : index === 2
-                      ? 'bg-yellow_color col-span-6 md:col-span-3 lg:pl-[48.3px] items-center flex-col sm:flex-row flex min-[600px] justify-between py-[48px] px-[20px] md:px-[10px] lg:pr-[38.7px]'
-                      : 'bg-orange_color col-span-6 md:col-span-3 lg:col-span-2 lg:row-span-2  px-[20px] md:px-[10px] lg:px-[41px] items-center flex flex-col sm:flex-row lg:flex-col justify-between py-[48px] lg:pr-[38.7px] lg:pt-[100px] lg:pb-[40px] '
+                      ? 'bg-yellow_color col-span-6 md:col-span-3 xl:pl-[48.3px] items-center flex-col sm:flex-row flex min-[600px] justify-between py-[48px] px-[20px] md:px-[10px] xl:pr-[38.7px]'
+                      : 'bg-orange_color col-span-6 md:col-span-3 xl:col-span-2 xl:row-span-2  px-[20px] md:px-[10px] xl:px-[41px] items-center flex flex-col sm:flex-row xl:flex-col justify-between py-[48px] xl:pr-[38.7px] xl:pt-[100px] xl:pb-[40px] '
                   )}
                 >
                   <div className="lg:h-[183px] lg:w-auto w-full">

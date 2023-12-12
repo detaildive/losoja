@@ -59,7 +59,7 @@ export const Navbar = () => {
           <AnimatedButton
             variant="secondary"
             link="/"
-            title="Chat wth"
+            title="Chat wth us"
             icon={<Icon height="24" width="24" id="chat" color="#000" />}
           />
         </div>
