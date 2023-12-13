@@ -50,7 +50,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   errorMessage,
   inputHint = false,
   inputHintText,
-  labelClassName
+  labelClassName,
 }) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleKeyDown = (e: any) => {
@@ -64,14 +64,20 @@ export const InputField: React.FC<InputFieldProps> = ({
   return (
     <div>
       {!!label && (
-        <Label className={labelClassName} infoHint={inputHint} infoHintText={inputHintText}  htmlFor={name} isRequired={isRequired}>
+        <Label
+          className={labelClassName}
+          infoHint={inputHint}
+          infoHintText={inputHintText}
+          htmlFor={name}
+          isRequired={isRequired}
+        >
           {label}
         </Label>
       )}
       <div className="relative">
         <input
           className={clsx(
-            'h-[45px] w-full border font-WorkSans bg-transparent px-4 outline-none placeholder:text-sm placeholder:text-gray-250 placeholder:font-light focus-within:border-secondary disabled:bg-gray-100',
+            'h-[45px] w-full border border-gray-170 font-WorkSans rounded-[10px] bg-transparent px-4 outline-none placeholder:text-sm placeholder:text-gray-250 placeholder:font-light focus-within:border-gray-550 disabled:bg-gray-100',
             hasError && 'border-red-500',
             className
           )}

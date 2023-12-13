@@ -1,5 +1,6 @@
-import type { Metadata } from 'next'
+import 'react-phone-number-input/style.css'
 import localFont from 'next/font/local'
+import type { Metadata } from 'next'
 import './globals.css'
 
 const recoleta = localFont({

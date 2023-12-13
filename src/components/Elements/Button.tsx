@@ -24,13 +24,12 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <button
       className={clsx(
-        'rounded-[10px] justify-center font-[600] whitespace-nowrap focus:outline-none disabled:cursor-not-allowed gap-2 disabled:opacity-70 cursor-pointer text-sm flex items-center gap',
+        'rounded-[10px] justify-center font-[600] whitespace-nowrap h-[50px] focus:outline-none disabled:cursor-not-allowed gap-2 disabled:opacity-70 cursor-pointer text-sm flex items-center gap transition-colors duration-100',
         variant === 'primary' &&
-          'bg-primary py-3 px-8 font-[600] text-white  hover:bg-secondary',
+          'bg-primary py-3 px-8 font-[600] text-white hover:bg-dark_orange',
         variant === 'outline' &&
           'px-8 py-3 flex items-center border justify-center',
-        variant === 'secondary' &&
-          'bg-secondary py-3 px-8 font-[600] ',
+        variant === 'secondary' && 'bg-secondary py-3 px-8 font-[600] ',
         className
       )}
       disabled={disabled}
