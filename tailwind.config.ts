@@ -27,6 +27,7 @@ const config: Config = {
         black_color: '#0F0F0F',
         pink_color: '#FF477E',
         orange_color: '#FF725E',
+        dark_orange: '#cc4718',
         'default-border': '#E5E5E5',
         gray: {
           50: '#FAFAFA',

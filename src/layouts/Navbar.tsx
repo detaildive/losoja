@@ -42,6 +42,7 @@ export const Navbar = () => {
     setIsComponentVisible: setOpenSideNav,
     ref,
   } = useComponentVisible()
+  
   return (
     <nav className="sticky  bg-gray-50 top-0 py-5 z-[9999]">
       <div className=" items-center justify-between container hidden lg:flex">
